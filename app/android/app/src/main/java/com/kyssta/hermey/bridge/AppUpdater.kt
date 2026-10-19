@@ -15,7 +15,7 @@ import java.net.URL
 /**
  * Android auto-updater — the mirror of the desktop's in-app updater.
  *
- * Checks the public GitHub releases feed for `kyssta-exe/hermey-rework`,
+ * Checks the public GitHub releases feed for `okyssta/hermey-rework`,
  * compares the latest release tag against the installed version, and offers a
  * one-click update: download the release APK, then hand it to the system
  * package installer. No app-store round trip, matching the desktop's
@@ -28,7 +28,7 @@ import java.net.URL
 class AppUpdater(private val context: Context) {
 
     companion object {
-        private const val GITHUB_OWNER = "kyssta-exe"
+        private const val GITHUB_OWNER = "okyssta"
         private const val GITHUB_REPO = "hermey-rework"
         private const val RELEASES_LATEST =
             "https://api.github.com/repos/$GITHUB_OWNER/$GITHUB_REPO/releases/latest"
